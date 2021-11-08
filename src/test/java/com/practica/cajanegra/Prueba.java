@@ -35,6 +35,7 @@ public class Prueba {
 		assertEquals("[A, B, C, A]", this.miLista.toString());
 	}*/
 	/*
+	@DisplayName("addLast")
     @ParameterizedTest(name="Add Last {0} in list")
     @ValueSource(strings= {"@", "A", "B", "M", "Y", "Z", "["})
     public void addLast(String s) {
@@ -47,7 +48,7 @@ public class Prueba {
 		assertEquals("[A, B, C, A, A]", this.miLista.toString());
 	}*/
 	/*
-	@DisplayName("Ntimes")
+	@DisplayName("addNtimes")
 	@ParameterizedTest(name = "{index} => s={0}, n={1}, salida={2}")
 	@CsvSource(value = {
 	"A:   1:     [A, B, C, A]",        
@@ -111,7 +112,7 @@ public class Prueba {
 		}
 	}*/
 	/*
-	@DisplayName("NPos")
+	@DisplayName("addAtPos")
 	@ParameterizedTest(name = "{index} => s={0}, n={1}, salida={2}")	//{"@", "A", "B", "M", "Y", "Z", "["}
 	@CsvSource(value = {
 	"A:   1:     [A, A, B, C]",        
@@ -177,14 +178,16 @@ public class Prueba {
 	*/
 	/* -------------------PONER EN MEMORIA QUE EL MÉTODO addFirst NO FUNCIONA---------------------
 	 */
-	/*@ParameterizedTest(name="Add First {0} in list")
+	/*
+	@DisplayName("addFirst")
+	@ParameterizedTest(name="Add First {0} in list")
     @ValueSource(strings= {"@", "A", "B", "M", "Y", "Z", "["})
     public void addFirst(String s) {
     	this.miLista.addFirst(s);
     	assertEquals("[" + s + ", A, B, C]", this.miLista.toString());
    	 }
-	*/ 
-	/*
+	*/
+	
 	@DisplayName("getApos")
 	@ParameterizedTest(name = "{index} =>pos={0}, esperado={1}")
 	@CsvSource(value = {
@@ -197,7 +200,7 @@ public class Prueba {
 	"-2:     ERROR",
 	}, delimiter = ':')
 	void test_csv3(int n, String salida) {
-		if(n>0 && n<3) {
+		if(n>0 && n<miLista.size()) {
 			assertEquals(this.miLista.getAtPos(n), salida);
 		}else {
 			assertThrows(IllegalArgumentException.class, () -> {
@@ -205,7 +208,7 @@ public class Prueba {
 			    });
 		}
 	} 
-	*/
+	
 }
 
 

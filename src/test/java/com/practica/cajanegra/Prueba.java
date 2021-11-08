@@ -188,7 +188,7 @@ public class Prueba {
    	 }
 	*/
 	
-	@DisplayName("getApos")
+	/*@DisplayName("getApos")
 	@ParameterizedTest(name = "{index} =>pos={0}, esperado={1}")
 	@CsvSource(value = {
 	"1:     A",        
@@ -208,7 +208,13 @@ public class Prueba {
 			    });
 		}
 	} 
-	
+	*/
+	@Test
+	@DisplayName("Size")
+	public void size() {
+		int prueba = this.miLista.size();
+		assertEquals( 3, prueba);
+	}
 }
 
 

@@ -3,12 +3,6 @@ GRUPO IWM41-Grupo 9
 
 ## Instrucciones para utilizar este proyecto
 
-* Cada alumno debe crearse un usuario de Github
-* Un miembro del grupo debe hacer fork a este proyecto y añadir al repositorio forkeado a sus compañeros de grupo y al profesor como colaboradores.
-* Descargar el proyecto utilizando git clone desde el terminal o desde el IDE.
-* Seguir las indicaciones del enunciado para añadir las dependencias necesarias para empezar a realizar las pruebas
-* Modificar este fichero añadiendo el número de grupo correspondiente y las instrucciones para ejecutar la práctica
-
 ## Instrucciones para poder ejecutar las pruebas en ECLIPSE:
 Run > Run Configurations… > Maven Build
 Seleccionamos el proyecto clonado en Base directory.
@@ -26,3 +20,4 @@ Tener en cuenta que en este proyecto la librería SingleList.jar se encuentra de
 
 
 Una vez realizado esto, se podrán ejecutar como JUnit tests los que figuran en el archivo Prueba.java
+Puede encontrar la documentacion de los tests en la Memoria del proyecto adjunta en moodle en formato pdf, dentro del .zip que contiene tales archivos

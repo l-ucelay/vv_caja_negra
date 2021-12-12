@@ -23,3 +23,6 @@ En Command line añadimos el siguiente comando, sustituyendo "/my/path" por el d
 Si el path tiene espacios podemos ponerlo entre comillas: 
 -Dfile=”C:/Users/pepe/Validación y Verificación/SingleList.jar” ….
 Tener en cuenta que en este proyecto la librería SingleList.jar se encuentra dentro de la carpeta: "Libraries".
+
+
+Una vez realizado esto, se podrán ejecutar como JUnit tests los que figuran en el archivo Prueba.java
